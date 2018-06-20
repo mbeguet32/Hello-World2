@@ -1,18 +1,11 @@
-import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
 import javax.swing.JCheckBox;
-import java.awt.BorderLayout;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-import java.awt.ScrollPane;
 
 /**
  * PROJET : Swing
@@ -23,7 +16,11 @@ import java.awt.ScrollPane;
  * @author 31010-07-02 - M.BEGUET
  * Créer le 11 juin 2018
  */
+@SuppressWarnings("serial")
 public class MaFenGraph3 extends JFrame implements ActionListener {
+	// Variable pour test debug
+	private int var1 = 7;
+	
 	public MaFenGraph3() {
 		this.setTitle("Recherche Hotel");
 		//this.setLocation(new Point(250, 250));
@@ -46,7 +43,7 @@ public class MaFenGraph3 extends JFrame implements ActionListener {
 		/** TO DO
 		 * RECUPERER LES CATEGORIE. i sera donc <= à la taille de la collection categorie 
 		 */
-		for (int i = 1; i<= 5; i++) {
+		for (int i = 1; i<= this.var1; i++) {
 			/*
 		JCheckBox chckbxNewCheckBox = new JCheckBox("Check box n° : "+i);
 		getContentPane().add(chckbxNewCheckBox);
